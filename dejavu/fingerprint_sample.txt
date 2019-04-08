@@ -11,6 +11,7 @@ PEAK_SORT = True
 FINGERPRINT_REDUCTION = 20
 ##################################
 
+###########SUGGESTED CONFIG#####################
 FINGERPRINT_REDUCTION = 30
 PEAK_SORT = False
 DEFAULT_OVERLAP_RATIO = 0.4
@@ -19,8 +20,23 @@ DEFAULT_AMP_MIN = 15
 PEAK_NEIGHBORHOOD_SIZE = 30
 
 soruce: https://libraries.io/github/soruly/dejavu
-##################################
 
+
+###########SUGGESTED CONFIG#####################
+
+DEFAULT_FS = 44100
+DEFAULT_WINDOW_SIZE = 1024
+DEFAULT_OVERLAP_RATIO = 0.9
+DEFAULT_FAN_VALUE = 15
+DEFAULT_AMP_MIN = 5
+PEAK_NEIGHBORHOOD_SIZE = 15
+MIN_HASH_TIME_DELTA = 0
+MAX_HASH_TIME_DELTA = 150
+FINGERPRINT_REDUCTION = 0
+
+https://github.com/worldveil/dejavu/issues/173
+
+#######################################
 
 ###### CONFIG 1  ##########
 DEFAULT_FS = 44100
@@ -61,3 +77,4 @@ MAX_HASH_TIME_DELTA = 300
 PEAK_SORT = False
 FINGERPRINT_REDUCTION = 5
 ##########################
+

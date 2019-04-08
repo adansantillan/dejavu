@@ -17,7 +17,7 @@ DEFAULT_FS = 44100
 
 ######################################################################
 # Size of the FFT window, affects frequency granularity
-DEFAULT_WINDOW_SIZE = 4096
+DEFAULT_WINDOW_SIZE = 1024
 
 ######################################################################
 # Ratio by which each sequential window overlaps the last and the
@@ -28,7 +28,7 @@ DEFAULT_OVERLAP_RATIO = 0.9
 ######################################################################
 # Degree to which a fingerprint can be paired with its neighbors --
 # higher will cause more fingerprints, but potentially better accuracy.
-DEFAULT_FAN_VALUE = 30
+DEFAULT_FAN_VALUE = 15
 
 ######################################################################
 # Minimum amplitude in spectrogram in order to be considered a peak.
@@ -40,14 +40,14 @@ DEFAULT_AMP_MIN = 5
 # Number of cells around an amplitude peak in the spectrogram in order
 # for Dejavu to consider it a spectral peak. Higher values mean less
 # fingerprints and faster matching, but can potentially affect accuracy.
-PEAK_NEIGHBORHOOD_SIZE = 5
+PEAK_NEIGHBORHOOD_SIZE = 15
 
 ######################################################################
 # Thresholds on how close or far fingerprints can be in time in order
 # to be paired as a fingerprint. If your max is too low, higher values of
 # DEFAULT_FAN_VALUE may not perform as expected.
 MIN_HASH_TIME_DELTA = 0
-MAX_HASH_TIME_DELTA = 300
+MAX_HASH_TIME_DELTA = 150
 
 ######################################################################
 # If True, will sort peaks temporally for fingerprinting;
@@ -59,7 +59,7 @@ PEAK_SORT = False
 # Number of bits to throw away from the front of the SHA1 hash in the
 # fingerprint calculation. The more you throw away, the less storage, but
 # potentially higher collisions and misclassifications when identifying songs.
-FINGERPRINT_REDUCTION = 5
+FINGERPRINT_REDUCTION = 0
 
 def fingerprint(channel_samples, Fs=DEFAULT_FS,
                 wsize=DEFAULT_WINDOW_SIZE,

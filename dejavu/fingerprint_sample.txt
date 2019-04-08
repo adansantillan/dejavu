@@ -76,5 +76,20 @@ MIN_HASH_TIME_DELTA = 0
 MAX_HASH_TIME_DELTA = 300
 PEAK_SORT = False
 FINGERPRINT_REDUCTION = 5
+
+#very slow not good  even with same fingerprint file 
 ##########################
 
+###### CONFIG 4  ##########
+DEFAULT_FS = 44100
+DEFAULT_WINDOW_SIZE = 1024
+DEFAULT_OVERLAP_RATIO = 0.9
+DEFAULT_FAN_VALUE = 15
+DEFAULT_AMP_MIN = 5
+PEAK_NEIGHBORHOOD_SIZE = 15
+MIN_HASH_TIME_DELTA = 0
+MAX_HASH_TIME_DELTA = 150
+PEAK_SORT = False
+FINGERPRINT_REDUCTION = 0
+
+##########################

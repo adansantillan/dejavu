@@ -28,7 +28,7 @@ DEFAULT_OVERLAP_RATIO = 0.9
 ######################################################################
 # Degree to which a fingerprint can be paired with its neighbors --
 # higher will cause more fingerprints, but potentially better accuracy.
-DEFAULT_FAN_VALUE = 30
+DEFAULT_FAN_VALUE = 60
 
 ######################################################################
 # Minimum amplitude in spectrogram in order to be considered a peak.
@@ -40,14 +40,14 @@ DEFAULT_AMP_MIN = 5
 # Number of cells around an amplitude peak in the spectrogram in order
 # for Dejavu to consider it a spectral peak. Higher values mean less
 # fingerprints and faster matching, but can potentially affect accuracy.
-PEAK_NEIGHBORHOOD_SIZE = 15
+PEAK_NEIGHBORHOOD_SIZE = 10
 
 ######################################################################
 # Thresholds on how close or far fingerprints can be in time in order
 # to be paired as a fingerprint. If your max is too low, higher values of
 # DEFAULT_FAN_VALUE may not perform as expected.
 MIN_HASH_TIME_DELTA = 0
-MAX_HASH_TIME_DELTA = 300
+MAX_HASH_TIME_DELTA = 150
 
 ######################################################################
 # If True, will sort peaks temporally for fingerprinting;

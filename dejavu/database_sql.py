@@ -295,6 +295,12 @@ class SQLDatabase(Database):
                 query = self.SELECT_MULTIPLE
                 query = query % ', '.join(['UNHEX(%s)'] * len(split_values))
 
+                print "query value"
+                print query
+
+                print "split_values"
+                print split_values
+
                 cur.execute(query, split_values)
 
                 for hash, sid, offset in cur:

@@ -126,3 +126,19 @@ FINGERPRINT_REDUCTION = 5
 #Still not recognizing
 Mysql DB Size: 
 ##########################
+
+###### CONFIG 7  ##########
+DEFAULT_FS = 44100
+DEFAULT_WINDOW_SIZE = 4096
+DEFAULT_OVERLAP_RATIO = 0.4
+DEFAULT_FAN_VALUE = 60
+DEFAULT_AMP_MIN = 5
+PEAK_NEIGHBORHOOD_SIZE = 10
+MIN_HASH_TIME_DELTA = 0
+MAX_HASH_TIME_DELTA = 150
+PEAK_SORT = False
+FINGERPRINT_REDUCTION = 5
+
+#Still not recognizing
+Mysql DB Size: 
+##########################
